@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>CheckPoint1</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5a872ddef5.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+<style>
+
+html {
+    font-family: 'Anta', sans-serif;
+    background-color: lightcoral ;
+}
+
+.containerOne {
+    display: flex;
+    justify-content: center;
+}
+
+.gridOne {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 10px;
+background-color: lightgrey;
+margin-top: 10px;
+margin-bottom: 10px;
+width: 660px;
+
+}
+.helloWorld {
+    font-weight: bold;
+    font-family: 'anta';
+}
+.fantasticWorld {
+    font-weight: bold;
+    font-family:'roboto';
+    color: blue;
+}
+.containerTwo {
+display: flex;
+justify-content: center;
+
+}
+.gridTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-gap: 5px;
+    background-color: lightgrey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 660px;
+}
+.red {
+background-color: red;
+text-align:center ;
+text-decoration-color: yellow;
+
+}
+.blue {
+    background-color: blue;
+    text-align: center;
+    text-decoration-color: red;
+}
+.yellow {
+background-color: yellow;
+text-align: center;
+text-decoration-color: blue;
+}
+.containerThree {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.gridThree {
+    display: grid;
+    grid-template-rows: 1fr 3fr; /* Two rows, second one is three times as large */
+    width: 500px; /* Set width to 500 pixels */
+    height: 300px; /* Set height to 300 pixels */
+    background-color: lightgray; /* Adding background color for clarity */
+    margin-bottom: 10px;
+}
+
+.green { background-color: green; }
+.orange { background-color: orange; }
+img {
+    width: 500px; /* Set image width to 500 pixels */
+    height: 225px; /* Set image height to 225 pixels */
+    object-fit: cover; /* Prevent image distortion or oversizing */
+    margin-bottom: 10px;
+}
+.containerFour {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px ;
+    margin-bottom: 10px;
+}
+.gridFour {
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Two equally sized rows */
+    margin-top: 5px;
+    width: 500px; /* Set width to 500 pixels */
+    background-color: green; /* Set background color to green */
+}
+#nestedGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns of equal size */
+    gap: 10px; /* Adding some gap between the grid items */
+    text-align: left;
+}
+.nestedGrid .box-right {
+    text-align: right;
+}
+.box {
+    text-align: left;
+    color: rgb(15, 15, 15);
+    font-style: inherit;
+    background-color: green; /* Background color for clarity */
+}
+.containerFive {
+    display: flex;
+    justify-content: center;
+}
+.gridFive {
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Two equally sized rows */
+    margin-top: 30px;
+    width: 500px; /* Set width to 500 pixels */
+    background-color: lightgrey; /* Set background color to green */
+}
+#secondChildGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    grid-gap: 10px; 
+    
+}
+.boxFive {
+    padding: 0;
+    text-align: left;
+    color: rgb(15, 15, 15);
+}
+#secondChildGrid img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.containerSix {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.gridSix {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 500px;
+    background-color: lightgrey;
+    
+}
+</style>
+</head>
+
+<body>
+    <div class="containerOne">
+        <div class="gridOne">
+            <div class="helloWorld">
+            <p>Hello World</p>
+            </div>
+            <div class="fantasticWorld">
+            <p>My Fantastic Content</p>
+            </div>
+        </div>
+    </div> 
+   
+    <div class="containerTwo">
+        <div class="gridTwo">
+            <div class="red">
+                <p>Red</p>
+            </div>
+            <div class="blue">
+                <p>Blue</p>
+            </div>
+            <div class="yellow">
+                <p>Yellow</p>
+            </div>
+        </div>
+    </div>
+<div class="containerThree">
+    <div class="gridThree">
+        <div class="green">
+            <p>The text I chose is Awesome</p>
+        </div>
+        <div class="orange">
+            <img src="../CheckPoint1/Images/photo-1478265409131-1f65c88f965c.avif" alt="Your Image">
+        </div>
+    </div>
+</div>
+<div class="containerFour">
+    <div class="gridFour">
+        <div class="box">
+            <p>My Even More Awesome Text</p>
+        </div>
+        <div id="nestedGrid">
+            <div class="box-left">
+                <p>My Left Text</p>
+            </div>
+            <div class="box-right">
+                <p>My Right Text</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="containerFive">
+    <div class="gridFive">
+        <div class="boxFive">
+            <p>My Even More Awesome Text</p>
+        </div>
+        <div id="secondChildGrid">
+            <div class="imageOne">
+            <img src="..//CheckPoint1/Images/photo-1488509071915-f14a6a6bbc06.avif" alt="ImagenOne">
+            </div>
+            <div class="imageTwo">
+                <img src="..//CheckPoint1/Images//photo-1422930717940-92ec7c690afc.avif" alt="ImageTwo">
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div class="containerSix">
+    <div class="gridSix">
+        <div class="icono">
+        <i class="fa-solid fa-cannabis"></i>
+        </div>
+        <div class="texto">
+            <p>Life is so beautiful and today it's friday</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+

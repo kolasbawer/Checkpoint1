@@ -1,0 +1,33 @@
+¿Cuáles son algunas de las cosas que hacen que SCSS sea diferente de CSS? (ponme ejemplos):
+
+En SCSS, puedes definir variables para almacenar valores que se pueden reutilizar en todo tu código. 
+Por ejemplo:
+$primary-color: #3498db;
+body {background-color: $primary-color;}
+
+Puedes anidar tags dentro de otros tags en SCSS para escribir un código más organizado y legible. 
+.container {
+    width: 100%;
+    padding: 20px;
+    .content {
+        width: 50px;
+	height: 50px;
+    }
+}
+
+¿Qué es una variable SCSS? (porque crees que debes utilizarla pon un ejemplo de una variable, escribe una variable y como se pondría para utilizarla)
+Una variable en SCSS: Es un contenedor que almacena un valor que puede ser reutilizado en múltiples lugares dentro del código.
+
+¿Qué es un SCSS Mixin? (porque crees que debes utilizarla pon un ejemplo de un mixin, escribiendo cómo se crea y como se pondría para utilizarla)
+Los mixins te permiten definir conjuntos de propiedades SCSS que se pueden reutilizar en diferentes partes deL código. Por ejemplo:
+@mixin custom-styles($background-color, $font-family) {
+    background-color: $background-color;
+    font-family: $font-family;
+}
+
+.button {
+    @include custom-styles(#3498db, 'Arial, sans-serif');
+}
+
+¿Qué significa Unidad fraccionaria (fr) con CSS Grid?
+es una unidad de medida  en el CSS Grid que se utiliza para definir el tamaño de las columnas o filas dentro de un grid container.
